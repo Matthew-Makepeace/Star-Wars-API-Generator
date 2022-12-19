@@ -1,6 +1,7 @@
 body {
     background-image: url('https://images.alphacoders.com/107/107763.jpg');
     color: #ffff00;
+    background-size: cover;
 }
 
 @font-face {
@@ -36,8 +37,10 @@ button:active {
 }
 
 #Results {
-    margin: 5% 35%;
+    margin: 3% 35% auto 20%;
+
     padding-left: 1%;
+
     border: 3px solid #ffff00;
     border-radius: 2px;
 }
