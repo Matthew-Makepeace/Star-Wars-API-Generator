@@ -1,6 +1,5 @@
 body {
     background-image: url('https://images.alphacoders.com/107/107763.jpg');
-    color: #ffff00;
     background-size: cover;
 }
 
@@ -9,12 +8,18 @@ body {
     src: url('star_jedi/starjedi/Starjedi.ttf');
 }
 
+h1, h3, p {
+    color: #ffff00;
+}
+
 h1 {
     font-family: 'STAR JEDI FONT';
+    text-decoration: underline;
 }
 
 h3, p {
     font-family: 'Trispace', sans-serif;
+    font-size: 1.5rem;
 }
 
 button {
@@ -37,9 +42,8 @@ button:active {
 }
 
 #Results {
-    margin: 3% 35% auto 20%;
-
     padding-left: 1%;
+    margin-top: 3%;
 
     border: 3px solid #ffff00;
     border-radius: 2px;

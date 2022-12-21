@@ -9,6 +9,11 @@
 
         <link rel="stylesheet" type="text/css" href="style.css" />
 
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
@@ -16,24 +21,51 @@
     <body>
         <div id="Header">
             <h1>Lego Star Wars: Freeplay Generator</h1>
-            <p>Welcome to the Lego Star Wars: Freeplay Generator. Click on the Button to Randomly Genrate a Planet, Two Players, 
-                Starship, and a Film.</p>
-                <div>
-                    <button id="button"><h2>Generate Free Play</h2></button>
+            <div class="container">
+              <div class="row">
+                <div class="col-1">
+                  <!-- Extra spacing on the Left Side of instruction text-->
                 </div>
+                <div class="col-10">
+                  <p>Welcome to the Lego Star Wars: Freeplay Generator. Click on the Button to Randomly Genrate a Planet, Two Players, 
+                    Starship, and a Film.</p>
+                </div>
+                <div class="col-1">
+                  <!-- Extra spacing on the Right Side of instruction text-->
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <button id="button"><h2>Generate Free Play</h2></button>
+            </div>
                 
         </div>
         
-        <div id="Results">
-            <h3>Setting-</h3>
-            <h3 id="film">Film: </h3>
-            <h3 id="planet">Planet: </h3>
+        
 
-            <br>
-            <h3>Players and Vehicle-</h3>
-            <h3 id="player1">Player 1: </h3>
-            <h3 id="player2">Player 2: </h3>
-            <h3 id="starship">Starship: </h3>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-1 col-md-1 col-lg-1">
+                <!-- Extra spacing on the Left Side-->
+              </div>
+
+              <div class="col-sm-10 col-md-8 col-lg-6" id="Results">
+                <h3>Setting-</h3>
+                <p id="film">Film: </p>
+                <p id="planet">Planet: </p>
+    
+                <br>
+                <h3>Players and Vehicle-</h3>
+                <p id="player1">Player 1: </p>
+                <p id="player2">Player 2: </p>
+                <p id="starship">Starship: </p>
+              </div>
+              <div class="col-sm-1 col-md-3 col-lg-5">
+                <!-- Extra spacing on the Right Side-->
+              </div>
+            </div>
+            
         </div>
         
         <script type='text/javascript' src='script.js'> </script>
